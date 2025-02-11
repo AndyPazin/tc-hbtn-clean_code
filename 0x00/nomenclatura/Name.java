@@ -5,8 +5,8 @@ public class Name {
     public List<Testcase> findAllTestcasesByUser(Name.User user){};
 
     //Declarações corretas
-    //B
-    public Account[] AccountList;
+    //A
+    public List<Account> AccountList;
 
     // Sem Prefixos
     //B
