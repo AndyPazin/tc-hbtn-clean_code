@@ -1,40 +1,40 @@
-import java.util.Date;
-import java.util.List;
-import java.net.URL;
-
 public class Name {
-
+    //variáveis que falam por si só
+    //A
     public Date modifiedDate;
-    public List<Testcase> findAllTestcasesByUser(User user){ return null;};
+    public List<Testcase> findAllTestcasesByUser(Name.User user){};
 
-    public List<Account> accountList;
+    //Declarações corretas
+    //B
+    public Account[] AccountList;
 
-    public void deleteUser(User user){};
+    // Sem Prefixos
+    //B
+    public void deleteUser(Name.User user){};
 
+    // Evite mapa mental
+    //B
     public URL url;
 
-    public class TableRepresenter{};
+    // Classe possui nomes próprios, funções devem ter verbos
+    //A
+    public class TableRepresent {};
     public void saveCar(){};
+//    //B
+//    public class TableRepresenter{};
+//    public void car(){};
 
-    public void saveUser(){};
-    public void createAccount(){};
-    public void generateContract(){};
+    // Uma palavra por conceito
+    //A
+    public saveUser(){}; saveAccount(){}; saveContract(){};
+//    //B
+//    public saveUser(){}; createAccount(){}; generateContract(){};
 
-    public static final int DAYS_IN_YEAR = 360;
-    public static final int HOURS_IN_WEEK = 168;
 
-    // Classe interna User (exemplo)
-    public class User {
-        // ... atributos e métodos da classe User
-    }
-
-    // Classe interna Testcase (exemplo)
-    public class Testcase {
-        // ... atributos e métodos da classe Testcase
-    }
-
-    // Classe interna Account (exemplo)
-    public class Account {
-        // ... atributos e métodos da classe Account
-    }
-}
+    //Use constants, enums instead of magic numbers, abbreviations
+//    //A
+//    public int daysInYear = 360;
+//    public int hoursInWeek = 168;
+    //B
+    public final int DAYS_IN_YEAR = 360;
+    public final int HOURS_IN_WEEK = 168;
